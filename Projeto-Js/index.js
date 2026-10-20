@@ -84,7 +84,7 @@ if (total > 100) {
 }
 console.log (frete); 
 */
-
+/*
 //Tipos Primitivos 
 const preco = 19.9;
 console.log (typeof preco);
@@ -100,3 +100,79 @@ console.log (typeof vazio); //erro Js ele é nulo mas vem como object
 
 let indefinido; 
 console.log (typeof indefinido); //variável não tem nenhum valor
+*/
+/*
+//Strings e Templates Literals
+const nome1= "Lucas";
+const nome2= 'Maria';
+const nome3= `João`;
+const idade= 23;
+
+const nomeCompleto= "Amanda Carolina Bernardo";
+
+console.log(nomeCompleto.length); //length=comprimento
+console.log (nomeCompleto.toUpperCase());//toUpperCase=Função -> Parenteses ativa a função
+console.log (nomeCompleto.toLowerCase());
+console.log (`Olá, meu nome é ${nomeCompleto} e tenho ${idade} anos.`);
+*/
+
+//Conversões e Tipos 
+// console.log(Number("123"));
+// console.log(parseInt("10.9"));
+// console.log(parseFloat("10.9"));
+// console.log(String(123));
+
+// console.log(Boolean(0)); //0=false
+// console.log(Boolean(1)); //1=true
+// console.log(Boolean("")); //false
+
+// const texto1 = prompt ("Digite um número:");
+// const texto = Number (prompt ("Digite um número:"));
+// console.log(texto + 5);
+
+//Arredondamento e formatando números
+// const preco = 19.987;
+// Console.log é para imprimir, apenas para ver o que tá acontecendo
+
+// console.log (preco.toFixed(2)); //colocar em quantas casas decimais eu quiser
+// console.log (Math.round(preco)); //arredondar pra cima
+// console.log (Math.floor(preco)); //arredondar pra baixo
+// console.log (Math.ceil(preco)); //arredondar pro número mais próximo
+
+//Operadores Aritméticos
+// console.log(2 + 3); //adição 
+// console.log(5 - 2); //subtração
+// console.log(4 * 2); //multiplicação
+// console.log(10 / 2); //divisão
+// console.log(10 % 3); //resto da divisão 
+// console.log(2 ** 3); //potência
+
+//Operadores de Comparação 
+// console.log(5 == "5") //igual frouxo -> Comparação entre valores
+// "=" é uma atribuição
+// console.log(5 == 5);
+// console.log(5 === 5) //igual estrito, esse seá falso
+
+// console.log(5!= "5") //diferente frouxo
+// console.log(5!= "7") //diferente frouxo
+
+// console.log(5!== "5") //diferente estrito
+// console.log(5!== 7) //diferente estrito
+
+
+//Média de duas notas
+// const nota1 = Number (prompt ("Primeira nota:"));
+// const nota2 = Number (prompt ("Segunda nota:"));
+
+// const media = (nota1 + nota2) /2;
+// console.log (`Média: ${media.toFixed(1)}`);
+
+//IMC (Índice de Massa Corporal)
+const peso = Number(prompt ("Digite seu peso (kg):"));
+const altura = Number(prompt("Altura (m):"));
+
+const imc = peso / (altura **2);
+
+alert(`IMC: ${imc.toFixed(2)}`);
+
+
