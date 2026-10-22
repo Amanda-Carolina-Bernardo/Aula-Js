@@ -24,15 +24,25 @@
 
 //Converter anos em meses, dias, horas e minutos (use 365 dias por ano)
 
-const ano = Number(prompt("Me diga quantos anos você tem?"));
-const meses = ano * 12;
-const dias = ano * 365;
-const horas = dias * 24; //ou ano * 8760
-const minutos = horas * 60; //ou ano * 52.560
+// const ano = Number(prompt("Me diga quantos anos você tem?"));
+// const meses = ano * 12;
+// const dias = ano * 365;
+// const horas = dias * 24; //ou ano * 8760
+// const minutos = horas * 60; //ou ano * 52.560
 
-console.log (`Idade informada: ${ano} anos:`);
-console.log (`---------------`);
-console.log (`${meses} meses`);
-console.log (`${dias} dias`);
-console.log (`${horas} horas`);
-console.log (`${minutos} minutos`);
+// console.log (`Idade informada: ${ano} anos:`);
+// console.log (`---------------`);
+// console.log (`${meses} meses`);
+// console.log (`${dias} dias`);
+// console.log (`${horas} horas`);
+// console.log (`${minutos} minutos`);
+
+
+
+
+
+
+
+
+
+
