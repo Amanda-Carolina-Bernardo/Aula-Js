@@ -159,25 +159,55 @@ peso ÷ [altura**2]
 /*Peça 3 números e diga qual é o maior.
 **Exemplo:** `4`, `9` e `7` → `O maior número é: 9`*/
 
-const num1 = Number (prompt ("Digite o primeiro número:"));
-const num2 = Number (prompt ("Digite o segundo número:"));
-const num3 = Number (prompt ("Digite o terceiro número:"));
+// const num1 = Number (prompt ("Digite o primeiro número:"));
+// const num2 = Number (prompt ("Digite o segundo número:"));
+// const num3 = Number (prompt ("Digite o terceiro número:"));
 
-if (Number.isNaN (num1) || Number.isNaN (num2) || Number.isNaN (num3)) {
+// if (Number.isNaN (num1) || Number.isNaN (num2) || Number.isNaN (num3)) {
+//     console.log("Valor inválido");
+// } else {
+//     let maior = num1;//let eu posso alterar o valor da minha variavel
+//     if (num2 > maior) maior = num2;
+//     if (num3 > maior) maior = num3;
+//     console.log ("O maior número é: " + maior);
+// }
+
+
+
+/*
+Peça dois números e uma operação (+, -, *, /). 
+Use switch para calcular, com default para operações inválidas e checagem de divisão por zero.
+*/
+
+const num1 = Number(prompt ("Digite o primeiro número:"));
+const num2 = Number (prompt ("Digite o segundo número:"));
+const op =  prompt ("Digite a operação que deseja realizar (+,-,*,/):");
+let resultado;
+
+if (Number.isNaN (num1) || Number.isNaN (num2)) {
     console.log("Valor inválido");
 } else {
-    let maior = num1;//let eu posso alterar o valor da minha variavel
-    if (num2 > maior) maior = num2;
-    if (num3 > maior) maior = num3;
-    console.log ("O maior número é: " + maior);
+    switch (op) {
+        case "+":
+            resultado = num1 + num2
+            console.log (`Resultado: ${resultado}`); 
+            break;
+        case "-":
+            resultado = num1 - num2
+            console.log (`Resultado: ${resultado}`); 
+            break;
+        case "*":
+            resultado = num1 * num2
+            console.log (`Resultado: ${resultado}`); 
+            break;
+        case "/":
+            resultado = num1 / num2
+            console.log (`Resultado: ${resultado}`); 
+            break;
+        default:
+            console.log ("Operação inválida.")
+    }
 }
-
-
-
-
-
-
-
 
 
 
