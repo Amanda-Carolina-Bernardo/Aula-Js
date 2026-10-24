@@ -5,7 +5,7 @@
 
 // console.log (frutas[0]);
 // console.log (frutas [2]);
-// console.log (frutas.length); //lenght= mostra comprimento de texgto e também de array
+// console.log (frutas.length); //lenght= mostra comprimento de texto e também de array
 
 // frutas.push("Uva"); //coloco a uva como último indice 
 // console.log(frutas);
