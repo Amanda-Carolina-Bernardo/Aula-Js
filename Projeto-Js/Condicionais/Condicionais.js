@@ -72,6 +72,8 @@
 
 //const situacao = idade >= 18 ? "maior" : "menor" //usado quando tem apenas duas condições apenas
 
+
+//Sem ternário
 // let situacao2;
 // if (idade>=18) { //igual ao que está acima
 //     console.log ("Maior");
