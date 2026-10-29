@@ -84,12 +84,100 @@
 
 //---------------------------------------------------------------
 
-const aluno = {nome: "Ana", idade: "20"};
+// const aluno = {nome: "Ana", idade: "20"};
 
-aluno.idade = 21 ; //alterei a idade 
-aluno.cidade = "São Paulo"; //adicionar a informação 
+// aluno.idade = 21 ; //alterei a idade 
+// aluno.cidade = "São Paulo"; //adicionar a informação 
 
-console.log(aluno);
+// console.log(aluno);
 
-delete aluno.cidade; //excluir a informação
-console.log (aluno); 
+// delete aluno.cidade; //excluir a informação
+// console.log (aluno); 
+
+//--------------------------------------------------------------------------------
+
+//Filter, Map, Find e Reduce
+//3 formas de escrever a função
+
+// function dobro (n){
+//     return n*2;
+// }
+
+// const dobroArrow = (n) => { //=> função anonima 
+//     return n*2;
+// }
+
+// const dobroCurto = n => n*2; //tem só 1 elemento na minha função
+
+//----------------------------------------------------
+
+console.log ("===FILTER==="); //FILTER -> Pega um array e te entrega um novo com filtro mas sem alterar o original
+
+const lucas = { name: "Lucas", lastName: "Garcez", age: 20 };
+const maria = { name: "Maria", lastName: "Oliveira", age: 17 };
+const joao = { name: "João", lastName: "Silva", age: 18 };
+const ana = { name: "Ana", lastName: "Santos", age: 22 };
+const people = [lucas, maria, joao, ana];
+
+const maiores = people.filter((value, index, array) => { //value, index= posição, array
+    console.log ("Index",index);
+    console.log ("Value",value.name);
+    console.log ("-------------------");
+    return value.age >=18; 
+});
+
+console.log ("Resultado filter:", maiores)
+
+console.log ("=== MAP ==="); //te devolve um novo array mas do mesmo tamanho do original
+
+const nome = people.map ((value, index, array)=> {
+    console.log ("Index",index);
+    console.log ("Value",value.name);
+    console.log ("-------------------");
+    return value.name;
+});
+ console.log ("Resultado map:", nome);
+
+ console.log ("=== FIND ==="); //procura uma informação dentro do array, pega a primeira condição que satifaz o laço, é interessante quando precisa de algo único
+const mariaEncontrada = people.find ((value, index, array) =>{
+    console.log ("Index",index);
+    console.log ("Value",value.name);
+    console.log ("-------------------");
+    return value.name === "Maria";
+})
+
+console.log ("Resultado find:", mariaEncontrada);
+
+const pedro = people.find (p => p.name === "Pedro");
+console.log (pedro);
+if (pedro === undefined) {
+    console.log ("Pessoa não encontrada");
+}
+
+console.log ("=== REDUCE ==="); //pega todo array e entrega um elemento
+// array.reduce ((acumulador, elementoAtual, indice, arrayOriginal)=> {
+
+// }, valorInicial) //acumulador = acc = onde ele vai acumulando 
+
+const somaIdades = people.reduce ((acc, value, index, array)=> {
+    console.log ("Index",index);
+    console.log ("Value",value.name, value.age);
+    console.log ("Acumulador antes:", acc); //mostrar acumulando
+    return acc + value.age;
+}, 0)
+
+console.log ("Resultado reduce:", somaIdades);
+
+//------------------------------------------------------
+//Encadeamento
+
+const nomesMaiores = people
+.filter (p => p.age >= 18)
+.map (p => p.name.toUpperCase());
+
+console.log (nomesMaiores);
+
+const somarMaiores = people
+.filter (p => p.age >= 18)
+.reduce ((acc,p) => acc + p.age, 0 );  //parenteses a mais por ter dois valores 
+console.log (somarMaiores);
