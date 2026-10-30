@@ -179,37 +179,35 @@ Peça dois números e uma operação (+, -, *, /).
 Use switch para calcular, com default para operações inválidas e checagem de divisão por zero.
 */
 
-const num1 = Number(prompt ("Digite o primeiro número:"));
-const num2 = Number (prompt ("Digite o segundo número:"));
-const op =  prompt ("Digite a operação que deseja realizar (+,-,*,/):");
-let resultado;
+// const num1 = Number(prompt ("Digite o primeiro número:"));
+// const num2 = Number (prompt ("Digite o segundo número:"));
+// const op =  prompt ("Digite a operação que deseja realizar (+,-,*,/):");
+// let resultado;
 
-if (Number.isNaN (num1) || Number.isNaN (num2)) {
-    console.log("Valor inválido");
-} else {
-    switch (op) {
-        case "+":
-            resultado = num1 + num2
-            console.log (`Resultado: ${resultado}`); 
-            break;
-        case "-":
-            resultado = num1 - num2
-            console.log (`Resultado: ${resultado}`); 
-            break;
-        case "*":
-            resultado = num1 * num2
-            console.log (`Resultado: ${resultado}`); 
-            break;
-        case "/":
-            resultado = num1 / num2
-            console.log (`Resultado: ${resultado}`); 
-            break;
-        default:
-            console.log ("Operação inválida.")
-    }
-}
-
-
+// if (Number.isNaN (num1) || Number.isNaN (num2)) {
+//     console.log("Valor inválido");
+// } else {
+//     switch (op) {
+//         case "+":
+//             resultado = num1 + num2
+//             console.log (`Resultado: ${resultado}`); 
+//             break;
+//         case "-":
+//             resultado = num1 - num2
+//             console.log (`Resultado: ${resultado}`); 
+//             break;
+//         case "*":
+//             resultado = num1 * num2
+//             console.log (`Resultado: ${resultado}`); 
+//             break;
+//         case "/":
+//             resultado = num1 / num2
+//             console.log (`Resultado: ${resultado}`); 
+//             break;
+//         default:
+//             console.log ("Operação inválida.")
+//     }
+// }
 
 
 

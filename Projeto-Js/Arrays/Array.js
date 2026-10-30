@@ -154,7 +154,7 @@ if (pedro === undefined) {
     console.log ("Pessoa não encontrada");
 }
 
-console.log ("=== REDUCE ==="); //pega todo array e entrega um elemento
+console.log ("=== REDUCE ==="); //pega todo array e entrega um elemento que tu desejar 
 // array.reduce ((acumulador, elementoAtual, indice, arrayOriginal)=> {
 
 // }, valorInicial) //acumulador = acc = onde ele vai acumulando 
@@ -179,5 +179,5 @@ console.log (nomesMaiores);
 
 const somarMaiores = people
 .filter (p => p.age >= 18)
-.reduce ((acc,p) => acc + p.age, 0 );  //parenteses a mais por ter dois valores 
+.reduce ((acc,p) => acc + p.age, 0 );  //parenteses a mais por ter dois valores (acc, p)
 console.log (somarMaiores);
