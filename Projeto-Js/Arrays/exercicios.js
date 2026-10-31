@@ -270,11 +270,68 @@ Dado const nums = [4, 8, 12, 15, 3], use find para achar o primeiro número maio
 //18-
 /* Dado um array de pessoas com nome e idade, ache a pessoa chamada "Bruno".*/
 
-const pessoas = [
-  { nome: "Ana", idade: 20 },
-  { nome: "Bruno", idade: 17 },
-  { nome: "Carla", idade: 30 },
-]
+// const pessoas = [
+//   { nome: "Ana", idade: 20 },
+//   { nome: "Bruno", idade: 17 },
+//   { nome: "Carla", idade: 30 },
+// ]
 
-const bruno = pessoas.find (p=> p.nome === "Bruno");
-console.log (bruno); 
+// const bruno = pessoas.find (p=> p.nome === "Bruno");
+// console.log (bruno); 
+
+//---------------------------------------------------------
+//19-
+/*Somar números
+Dado const nums = [3, 5, 2, 10], use reduce para somar tudo.*/
+
+// const nums = [3, 5, 2, 10];
+
+// const soma = nums.reduce ((acc, value )=> acc + value, 0 ) //preciso do acumulador e do valor)
+// console.log(soma);
+
+//------------------------------------------------------------
+
+//20-
+//Contar os pares
+//Dado const nums = [1, 2, 3, 4, 6], use reduce para contar quantos números são pares.
+
+// const nums = [1, 2, 3, 4, 6]
+// const pares = nums.reduce ((acc, value)=> (value % 2 === 0 ? acc + 1 : acc), 0); //if = ?, else=:
+// console.log (pares);
+
+//---------------------------------------------------------------------
+//21-
+/*Maior valor
+Dado const nums = [7, 3, 19, 4], use reduce para achar o maior número (sem usar Math.max).*/
+
+// const nums = [7, 3, 19, 4]
+// const maior = nums.reduce ((acc, n) => ( n > acc ? n : acc ), -Infinity); //-Infinity = qualquer valor é maior que ele
+// console.log (maior);
+
+//------------------------------------------------------------------------------
+//22- 
+/* Total do carrinho
+Dado um carrinho com itens { nome, preco, qtd }, calcule o total (preco * qtd de cada item, somados).
+*/
+// const carrinho = [
+//   { nome: "Caneta", preco: 2, qtd: 5 },
+//   { nome: "Caderno", preco: 15, qtd: 2 },
+//   { nome: "Borracha", preco: 1, qtd: 3 },
+// ];
+
+// const itens = carrinho.reduce ((acc, n)=> n.preco * n.qtd + acc, 0);
+// console.log (itens);
+
+//----------------------------------------------------------------
+//23-
+/*Média das notas
+Dado const notas = [8, 6, 9, 5], calcule a média usando reduce para somar.
+*/
+
+// const notas = [8, 6, 9, 5];
+// const soma = notas.reduce ((acc, n) => (n + acc), 0);
+// console.log (soma);
+
+// const media = notas.lenght === 0 ?  0 : soma / notas.length; // lenght-> tamanho do array
+// console.log (media);
+
